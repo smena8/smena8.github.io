@@ -1,11 +1,158 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Full Stack Developer portfolio.">
+    <title>Mena Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💼</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    Hello World
+    <section id="main" class="main__container">
+        <h1 class="section-header">01 Main</h1>
+            <nav>
+                <ul class="nav__list">
+                    <li class="nav__list__item">
+                        <a class="nav__list__item__link" href="#main">
+                            <span class="nav__link__text--first">Main</span>
+                            <span class="nav__link__text--sec">/ (01)</span>
+                            <span class="nav__link__background"></span>
+                        </a>
+                    </li>
+                    <li class="nav__list__item">
+                        <a class="nav__list__item__link" href="#about">
+                        <span class="nav__link__text--first">About</span>
+                        <span class="nav__link__text--sec">/ (02)</span>
+                        <span class="nav__link__background"></span></a>
+                    </li>
+                    <li class="nav__list__item">
+                        <a class="nav__list__item__link" href="#projects">
+                            <span class="nav__link__text--first">Archive</span>
+                            <span class="nav__link__text--sec">/ (03)</span>
+                            <span class="nav__link__background"></span></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="main__container__welcome">
+                <!-- <span class="border-line"></span> -->
+                <h2 class="main__container__welcome--text"><em>Hi!</em> I'm Sam.</h2>
+                <h3 class="main__container__welcome--text">A Full Stack Developer.</h3>
+                <div>
+                    <a class="btn" href="#projects">View Work</a>
+                    <a class="btn" href="https://github.com/smena8" target="_blank">View Github</a>
+                </div>
+            </div>
+    </section>
+    <section id="about" class="about__container">
+        <h1 class="section-header">02 About</h1>
+        <div class="about__container--inner">
+            <div class="about__text">
+                <h2>About Me</h2>
+                <p>With a Bachelor’s in History, I began working in the field of Information Science cataloging databases. Working with taxonomies and SQL, much of the data entry was done manually...until I discovered that I could use code to automate some tedious data entry processes! I realized later that the programming language it used was essentially BASIC, but it opened my eyes and laid a foundation for my coding journey. I moved on to learning Python to work with Excel sheets and data scraping to automate tasks that had been done manually. As I gained more knowledge, I loved being able to help my coworkers by creating executable files for them so they could do the same. Programming & coding became the favorite part of my work day. I’ve since added to my skill set with other languages and frameworks, and am now seeking a full-time role where I can both contribute and learn in a team environment.</p>
+            </div>
+            <div class="about__img" style="">
+                <img width="900px" height="600px" src="images/library.jpg" alt="Inside of Library Building">
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="projects__container">
+        <h1 class="section-header">03 Archive</h1>
+        <div class="projects__container--inner">
+                        <div class="project">
+                            <a class="project__img__link" href="https://smena-portfolio.herokuapp.com/meal-planner/" target="_blank" rel="noreferrer">
+                                Meal Planner Project
+                                <div class="project__img" role="img" height="100%" width="100%" style="background-image: url('images/mealplanner.jpg')" aria-label="Meal Planner Project"></div>
+                            </a>
+                            <a class="project__link" href="https://smena-portfolio.herokuapp.com/meal-planner/" target="_blank" rel="noreferrer">
+                                <h2 class="project__hdr">Meal Planner</h2>
+                            </a>
+                            <div class="project__desc">
+                                <input id="info_mealplan" type="checkbox">
+                                <label for="info_mealplan" class="btn tools__accordion" tabindex="0" role="button" aria-pressed="false" aria-expanded="false">Info<span></span></label>
+                                <div class="accordian">
+                                    <p class="project__desc--summary">
+                                        A full-stack web application that allows users to create a personalized recipe box by selecting
+                                        from recipes on the website, external sites, or adding their own. Users can also create a weekly
+                                        meal plan calendar and customize a shopping list.<br>
+                                        This project utilizes a relational database that allows the recipes, ingredients, and
+                                        user information to be pulled individually or together as needed.
+                                        With the django-measurements library ingredient measurements are stored in the database
+                                        so they can be consolidated or converted
+                                        when necessary (i.e. "3 lb green beans" vs. "2 lb green beans, 16 oz green beans").
+                                        <br>
+                                     </p>
+                                    <div class="project__desc--links">
+                                        <a class="btn" href="https://github.com/smena8/meal-planner" target="_blank" rel="noreferrer">Github
+                                    </a>
+                                    </div>
+                                </div>
+                                <input id="tools_mealplan" type="checkbox">
+                                <label for="tools_mealplan" class="btn tools__accordion" tabindex="0" role="button" aria-pressed="false" aria-expanded="false">Tools<span></span></label>
+                                <p class="project__desc--tools accordian">
+                                    <strong>Frontend:</strong> HTML5, CSS
+                                    <br>
+                                <strong>Languages:</strong> Python, JavaScript, JQuery, AJAX
+                                    <br>
+                                <strong>Libraries & API:</strong> Spoonacular API, Cloudinary, django-measurement
+                                <br>
+                                <strong>Framework:</strong> Django
+                                    <br>
+                                <strong>Database:</strong> PostgreSQL
+                                <br>
+                                <strong>Web Debug Tools:</strong> Chrome developer tools
+                                    <br>
+                                <strong>Versioning:</strong> Git, GitHub
+                                    <br>
+                                <strong>Deployment:</strong> Heroku
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <a class="project__img__link" href="https://fruit-punch-game.herokuapp.com/" target="_blank" rel="noreferrer">
+                                Fruit Punch
+                                <div class="project__img" role="img" height="100%" width="100%" style="background-image: url('images/fruitpunch.jpg');" aria-label="Fruit Punch Game"></div>
+                            </a>
+                                <a class="project__link" href="https://fruit-punch-game.herokuapp.com/" target="_blank" rel="noreferrer">
+                                <h2 class="project__hdr">Fruit Punch</h2>
+                            </a>
+                            <div class="project__desc">
+                                <input id="info_fruitpunch" type="checkbox">
+                                <label for="info_fruitpunch" class="btn tools__accordion" tabindex="0" role="button" aria-pressed="false" aria-expanded="false">Info<span></span></label>
+                                <div class="accordian">
+                                    <p class="project__desc--summary">
+                                        Fruit Punch is a game built with JavaScript. Similar to Candy Crush, to get points a player must match at least 3 items in a row or column. When the items are matched, they disappear to make room for new items. The player can only switch two items when one is above, below, left, or right of another item. Diagonal moves are not allowed. When a player accumulates the target amount of points they progress to the next level. Each time the game progresses to the next level the number of moves available decreases, the points target increases, and a different type of item is added to the group of items to increase the matching difficulty. The player loses the game if they run out of moves before a level is complete. The player wins if all levels of the game are completed.                                    <br>
+                                        <div class="project__desc--links">
+                                            <a class="btn" href="https://github.com/smena8/fruit-punch" target="_blank" rel="noreferrer">Github
+                                        </a>
+                                            <a class="btn" href="https://github.com/smena8/fruit-punch/blob/main/README.md" target="_blank" rel="noreferrer">README
+                                        </a>
+                                        </div>
+                                    </p>
+                                </div>
+                                <input id="tools_fruitpunch" type="checkbox">
+                                <label for="tools_fruitpunch" class="btn tools__accordion" tabindex="0" role="button" aria-pressed="false" aria-expanded="false">Tools<span></span></label>
+                                <p class="project__desc--tools accordian">
+                                    <strong>Frontend:</strong> HTML, CSS
+                                    <br>
+                                <strong>Languages:</strong> JavaScript
+                                    <br>
+                                <strong>Web Debug Tools:</strong> Chrome developer tools
+                                    <br>
+                                <strong>Versioning:</strong> Git, GitHub
+                                    <br>
+                                <strong>Deployment:</strong> Heroku
+                                </p>
+                            </div>
+
+                    </div>
+        </div>
+    </section>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
