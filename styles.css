@@ -473,6 +473,11 @@ label:hover:before, label:focus:before, label:active:before {
     color: var(--white);
 }
 
+
+label:hover > span::after, label:focus > span::after, label:active > span::after {
+	color: var(--white);
+}
+
 a:hover > *:first-child,
 a:focus > *:first-child {
     font-style: oblique;
